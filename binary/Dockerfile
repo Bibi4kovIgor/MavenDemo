@@ -3,4 +3,4 @@ ENV APP_NAME=demo-jar-with-dependencies.jar
 WORKDIR /app
 COPY ${APP_NAME} /app
 RUN echo $APP_NAME && ls -ah
-ENTRYPOINT java -jar $APP_NAME
+CMD java -jar $APP_NAME
